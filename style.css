@@ -1,0 +1,78 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+.container{
+    border: 4px solid #2C7095;
+    max-width: 200px;
+    width: 100%;
+    margin: 10% auto;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-shadow: -1px 3px 25px -4px rgba(102,102,102,1);
+    -moz-box-shadow: -1px 3px 25px -4px rgba(102,102,102,1);
+    box-shadow: -1px 3px 25px -4px rgba(102,102,102,1);
+    background: #BBCDE5;
+    color: #222222
+
+}
+/* Option */
+.option{
+    display: block;
+    margin-bottom: 20px;
+}
+/* Check */
+.check{
+    padding-left:2em;
+}
+/* The best way to hide the default checkboxes */
+.check__input{
+    position: absolute; /*remove margin from the left of the checkbox-label*/
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.check__box{
+    position: absolute;
+    margin-left: -2.2em;
+    width: 1em;
+    height: 1em;
+    /* background-image: url('https://cdn.glitch.com/d6162378-5823-4160-a555-3d9789bd2b92%2Foff.svg?1550563355034'); */
+    /* background-image: url('./assets/off.svg'); */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Crect x='3' y='3' width='14' height='14' fill='%23fff' stroke='%234a90e2' stroke-width='2' rx='2'/%3E%3C/svg%3E");
+}
+/* Checked */
+.check__input:checked + .check__box{
+    /* background-image:url('https://cdn.glitch.com/d6162378-5823-4160-a555-3d9789bd2b92%2Fon.svg?1550563355439'); */
+    /* background-image:url('./assets/on.svg') */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Crect x='2' y='2' width='16' height='16' fill='%234A90E2' rx='3'/%3E%3Cpolyline fill='none' stroke='%23fff' stroke-width='3' points='5 9 9 13 15 6'/%3E%3C/svg%3E");
+}
+/* Focus */
+.check__input:focus + .check__box{
+    /* background-image:url('https://cdn.glitch.com/d6162378-5823-4160-a555-3d9789bd2b92%2Foff-focused.svg?1550563355021'); */
+    /* background-image:url('./assets/off-focused.svg'); */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Crect width='20' height='20' fill='%237ed321' rx='4'/%3E%3Crect width='14' height='14' x='3' y='3' fill='%23fff' stroke='%234a90e2' stroke-width='2' rx='2'/%3E%3C/svg%3E");
+  
+}
+.check__input:checked:focus + .check__box{
+    /* background-image:url('https://cdn.glitch.com/d6162378-5823-4160-a555-3d9789bd2b92%2Fon-focused.svg?1550563355063)'); */
+    /* background-image:url('./assets/on-focused.svg') */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Crect width='20' height='20' fill='%237ed321' rx='4'/%3E%3Crect width='16' height='16' x='2' y='2' fill='%234a90e2' rx='3'/%3E%3Cpolyline fill='none' stroke='%23fff' stroke-width='3' points='5 9 9 13 15 6'/%3E%3C/svg%3E");
+}
+
+/* Disabled */
+.check__input:disabled + .check__box{
+    /* background-image:url('https://cdn.glitch.com/d6162378-5823-4160-a555-3d9789bd2b92%2Foff-disabled.svg?1550563354916'); */
+    /* background-image:url('./assets/off-disabled.svg'); */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Crect x='3' y='3' width='14' height='14' fill='%23fff' stroke='%239b9b9b' stroke-width='2' rx='2'/%3E%3C/svg%3E");
+}
+.check__input:checked:disabled + .check__box{
+    /* background-image:url('https://cdn.glitch.com/d6162378-5823-4160-a555-3d9789bd2b92%2Fon-disabled.svg?1550563354883'); */
+    /* background-image:url('./assets/on-disabled.svg'); */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Crect x='2' y='2' width='16' height='16' fill='%239B9B9B' rx='3'/%3E%3Cpolyline fill='none' stroke='%23FFF' stroke-width='3' points='5 9 9 13 15 6'/%3E%3C/svg%3E");
+}
